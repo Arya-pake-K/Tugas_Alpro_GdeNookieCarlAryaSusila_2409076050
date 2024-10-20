@@ -1,0 +1,61 @@
+# Deskripsi produk
+kentang = 20000
+es_kopi = 15000
+ayam_geprek = 10000
+
+print("""Barang yang dijual ditoko kami
+      1. Kentang
+      2. Es Kopi
+      3. Ayam geprek
+      ==============
+      Diskon 10% setiap pembelian minimal Rp. 50000
+      Diskon 20% setiap pembelian minimal Rp. 25000""")
+produk = input("Silahkan pilih menu: ")
+
+if produk == "1":
+    print("Kentang: Rp.20000")
+    jumlah = int(input("Beli berapa banyak: "))
+    harga = jumlah * kentang
+    print("Harga normal: Rp.", harga)
+    if harga >= 50000:
+        diskon = harga - (harga * 20/100)
+        print("Selamat anda dapat diskon 20%")
+        print("harga setelah diskon: ", diskon)
+    elif harga >= 25000:
+        diskon = harga - (harga * 10/100)
+        print("Selamat anda dapat diskon 10%")
+        print("harga setelah diskon: ", diskon)
+    else:
+        print("anda membayar dengan harga normal")
+
+if produk == "2":
+    print("Es kopi: Rp.15000")
+    jumlah = int(input("Beli berapa banyak: "))
+    harga = jumlah * es_kopi
+    print("Harga normal: Rp.", harga)
+    if harga >= 50000:
+        diskon = harga - (harga * 20/100)
+        print("Selamat anda dapat diskon 20%")
+        print("harga setelah diskon: ", diskon)
+    elif harga >= 25000:
+        diskon = harga - (harga * 10/100)
+        print("Selamat anda dapat diskon 10%")
+        print("harga setelah diskon: ", diskon)
+    else:
+        print("anda membayar dengan harga normal")
+
+if produk == "3":
+    print("Ayam geprek: Rp.10000")
+    jumlah = int(input("Beli berapa banyak: "))
+    harga = jumlah * ayam_geprek
+    print("Harga normal: Rp.", harga)
+    if harga >= 50000:
+        diskon = harga - (harga * 20/100)
+        print("Selamat anda dapat diskon 20%")
+        print("harga setelah diskon: ", diskon)
+    elif harga >= 25000:
+        diskon = harga - (harga * 10/100)
+        print("Selamat anda dapat diskon 10%")
+        print("harga setelah diskon: ", diskon)
+    else:
+        print("anda membayar dengan harga normal")
